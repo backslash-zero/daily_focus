@@ -2,5 +2,13 @@
 	"name": "daily-focus",
 	"description": "Minimal Website Blocker",
 	"version": "1.0",
-	"manifest_version": 3
-  }
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["storage"],
+	"action": {
+		"default_popup": "ui/html/popup.html"
+	}
+	
+}
